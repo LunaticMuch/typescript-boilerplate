@@ -1,0 +1,36 @@
+{
+  "name": "typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "This template is a starting project for typescript version 3.8",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "build": "tsc",
+    "build:checktypes":"tsc --noEmit",
+    "build:clean": "rm -rf dist/*",
+    "start": "npm run build:clean && npm run build && node dist/index.js",
+    "start:dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LunaticMuch/typescript-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LunaticMuch/typescript-boilerplate/issues"
+  },
+  "homepage": "https://github.com/LunaticMuch/typescript-boilerplate#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "nodemon": "^2.0.2",
+    "prettier": "^2.0.2",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3"
+  }
+}
